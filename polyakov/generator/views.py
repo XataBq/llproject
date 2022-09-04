@@ -59,8 +59,3 @@ def ready_var(request, pk):
         form = AnswerForm()
     context = {'variant': variant, 'form': form}
     return render(request, 'generator/ready_var.html', context)
-
-
-def rush(request):
-    return render(request, 'generator/answer.html')
-    feijfjeufh
