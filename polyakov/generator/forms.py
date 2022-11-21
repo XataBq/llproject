@@ -6,6 +6,10 @@ class VarForm(forms.Form):
                                  label='Введите вариант')
 
 
+class TaskForm(forms.Form):
+    tasks = [forms.BooleanField(required=False) for i in range(1, 27)]
+
+
 class AnswerForm(forms.Form):
     answer1 = forms.CharField(required=False)
     answer2 = forms.CharField(required=False)

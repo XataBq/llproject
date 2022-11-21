@@ -1,7 +1,7 @@
 from django.shortcuts import render, redirect
 from .models import Variant
 from .generate_task import new_variant
-from .forms import VarForm, AnswerForm
+from .forms import VarForm, AnswerForm, TaskForm
 
 
 # Create your views here.
