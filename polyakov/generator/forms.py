@@ -7,7 +7,7 @@ class VarForm(forms.Form):
 
 
 class TaskForm(forms.Form):
-    tasks = [forms.BooleanField(required=False) for i in range(1, 27)]
+    task1 = forms.BooleanField(widget=forms.CheckboxInput(), required=False)
 
 
 class AnswerForm(forms.Form):
