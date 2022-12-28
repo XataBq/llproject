@@ -1,5 +1,5 @@
 from django.shortcuts import render, redirect
-from .models import Variant
+from .models import *
 from .generate_task import new_variant
 from .forms import VarForm, AnswerForm, TaskForm
 
@@ -9,12 +9,13 @@ from .forms import VarForm, AnswerForm, TaskForm
 def index(request):
     if request.method == 'POST':
         form = VarForm(request.POST)
+        form2 = TaskForm(request.POST)
         if form.is_valid():
             if form.cleaned_data['variant']:
                 variant = Variant.objects.get(pk=form.cleaned_data['variant'])
                 return redirect(variant)
             else:
-                return redirect('/gen/')
+                return redirect('gen')
     else:
         form = VarForm()
     return render(request, 'generator/index.html', {'form': form})
@@ -59,3 +60,15 @@ def ready_var(request, pk):
         form = AnswerForm()
     context = {'variant': variant, 'form': form}
     return render(request, 'generator/ready_var.html', context)
+
+
+def get_task(request, num):
+    tasks = all_models[num].objects.all()
+    all_tasks = {}
+    counter = 0
+    for i in tasks:
+        counter += 1
+        all_tasks[f"task{counter}"] = i
+    print(all_tasks)
+    context = {'tasks': all_tasks}
+    return render(request, 'generator/task.html', context)
