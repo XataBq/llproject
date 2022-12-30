@@ -3,11 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="0ac8904e-654f-4ea8-9e37-ae8726c8d060" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/polyakov/generator/forms.py" beforeDir="false" afterPath="$PROJECT_DIR$/polyakov/generator/forms.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/polyakov/generator/templates/generator/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/polyakov/generator/templates/generator/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/polyakov/generator/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/polyakov/generator/urls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/polyakov/generator/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/polyakov/generator/views.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/polyakov/templates/inc/_variant.html" beforeDir="false" afterPath="$PROJECT_DIR$/polyakov/templates/inc/_variant.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
