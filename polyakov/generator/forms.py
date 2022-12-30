@@ -7,7 +7,33 @@ class VarForm(forms.Form):
 
 
 class TaskForm(forms.Form):
-    task1 = forms.BooleanField(widget=forms.CheckboxInput(), required=False)
+    task1 = forms.BooleanField(required=False, label="1", initial=True)
+    task2 = forms.BooleanField(required=False, label="2", initial=True)
+    task3 = forms.BooleanField(required=False, label="3", initial=True)
+    task4 = forms.BooleanField(required=False, label="4", initial=True)
+    task5 = forms.BooleanField(required=False, label="5", initial=True)
+    task6 = forms.BooleanField(required=False, label="6", initial=True)
+    task7 = forms.BooleanField(required=False, label="7", initial=True)
+    task8 = forms.BooleanField(required=False, label="8", initial=True)
+    task9 = forms.BooleanField(required=False, label="9", initial=True)
+    task10 = forms.BooleanField(required=False, label="10", initial=True)
+    task11 = forms.BooleanField(required=False, label="11", initial=True)
+    task12 = forms.BooleanField(required=False, label="12", initial=True)
+    task13 = forms.BooleanField(required=False, label="13", initial=True)
+    task14 = forms.BooleanField(required=False, label="14", initial=True)
+    task15 = forms.BooleanField(required=False, label="15", initial=True)
+    task16 = forms.BooleanField(required=False, label="16", initial=True)
+    task17 = forms.BooleanField(required=False, label="17", initial=True)
+    task18 = forms.BooleanField(required=False, label="18", initial=True)
+    task19 = forms.BooleanField(required=False, label="19", initial=True)
+    task20 = forms.BooleanField(required=False, label="20", initial=True)
+    task21 = forms.BooleanField(required=False, label="21", initial=True)
+    task22 = forms.BooleanField(required=False, label="22", initial=True)
+    task23 = forms.BooleanField(required=False, label="23", initial=True)
+    task24 = forms.BooleanField(required=False, label="24", initial=True)
+    task25 = forms.BooleanField(required=False, label="25", initial=True)
+    task26 = forms.BooleanField(required=False, label="26", initial=True)
+    task27 = forms.BooleanField(required=False, label="27", initial=True)
 
 
 class AnswerForm(forms.Form):
